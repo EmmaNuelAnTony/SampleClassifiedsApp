@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="22dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.388">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Welcome"
+            style="@style/TextStyle_bold"
+            android:textColor="@color/colorPrimary"
+            android:textSize="22dp" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bordered_bg">
+
+
+            <EditText
+                android:id="@+id/EdtLogin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/TextStyle_regular"
+                android:background="@android:color/transparent"
+                android:gravity="center_vertical"
+                android:hint="Enter Name"
+                android:inputType="text"
+                android:padding="10dp"
+                android:textColorHint="@color/grey" />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="32dp"
+            android:background="@drawable/edittext_bg"
+            android:text="Let`s Begin"
+            style="@style/TextStyle_regular"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/colorPrimaryDark" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
